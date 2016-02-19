@@ -12,6 +12,10 @@
 		870ABAAB1C76B026005F4FC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870ABAA91C76B026005F4FC6 /* Main.storyboard */; };
 		870ABAAD1C76B026005F4FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870ABAAC1C76B026005F4FC6 /* Assets.xcassets */; };
 		870ABAB01C76B026005F4FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870ABAAE1C76B026005F4FC6 /* LaunchScreen.storyboard */; };
+		870ABAB91C76B295005F4FC6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ABAB71C76B295005F4FC6 /* CustomTableViewCell.swift */; };
+		870ABABC1C76B751005F4FC6 /* tommy.png in Resources */ = {isa = PBXBuildFile; fileRef = 870ABABB1C76B751005F4FC6 /* tommy.png */; };
+		870ABABE1C76F17A005F4FC6 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870ABABD1C76F17A005F4FC6 /* CoreSpotlight.framework */; };
+		870ABAC01C76F1AE005F4FC6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ABABF1C76F1AE005F4FC6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		870ABAAC1C76B026005F4FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870ABAAF1C76B026005F4FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		870ABAB11C76B026005F4FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870ABAB71C76B295005F4FC6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		870ABABB1C76B751005F4FC6 /* tommy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tommy.png; sourceTree = "<group>"; };
+		870ABABD1C76F17A005F4FC6 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		870ABABF1C76F1AE005F4FC6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870ABABE1C76F17A005F4FC6 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,7 @@
 		870ABA991C76B025005F4FC6 = {
 			isa = PBXGroup;
 			children = (
+				870ABABD1C76F17A005F4FC6 /* CoreSpotlight.framework */,
 				870ABAA41C76B025005F4FC6 /* SpotlightDemo */,
 				870ABAA31C76B025005F4FC6 /* Products */,
 			);
@@ -57,6 +67,9 @@
 				870ABAA51C76B025005F4FC6 /* AppDelegate.swift */,
 				870ABAA71C76B025005F4FC6 /* ViewController.swift */,
 				870ABAA91C76B026005F4FC6 /* Main.storyboard */,
+				870ABABB1C76B751005F4FC6 /* tommy.png */,
+				870ABAB71C76B295005F4FC6 /* CustomTableViewCell.swift */,
+				870ABABF1C76F1AE005F4FC6 /* DetailViewController.swift */,
 				870ABAAC1C76B026005F4FC6 /* Assets.xcassets */,
 				870ABAAE1C76B026005F4FC6 /* LaunchScreen.storyboard */,
 				870ABAB11C76B026005F4FC6 /* Info.plist */,
@@ -124,6 +137,7 @@
 			files = (
 				870ABAB01C76B026005F4FC6 /* LaunchScreen.storyboard in Resources */,
 				870ABAAD1C76B026005F4FC6 /* Assets.xcassets in Resources */,
+				870ABABC1C76B751005F4FC6 /* tommy.png in Resources */,
 				870ABAAB1C76B026005F4FC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870ABAB91C76B295005F4FC6 /* CustomTableViewCell.swift in Sources */,
 				870ABAA81C76B025005F4FC6 /* ViewController.swift in Sources */,
 				870ABAA61C76B025005F4FC6 /* AppDelegate.swift in Sources */,
+				870ABAC01C76F1AE005F4FC6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpotlightDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yy.www.SpotlightDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.spotlight.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +278,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpotlightDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yy.www.SpotlightDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.spotlight.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
