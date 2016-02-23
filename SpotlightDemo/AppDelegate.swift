@@ -41,6 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        
+//       let navigationC = (window?.rootViewController as! UINavigationController)
+////        navigationC.popToRootViewControllerAnimated(false)
+////        let nVC =  DetailViewController.init(nib)
+//        
+//         navigationC .pushViewController(nVC, animated: true)
+        return true
+    }
 
 }
 

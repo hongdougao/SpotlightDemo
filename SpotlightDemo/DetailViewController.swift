@@ -26,7 +26,7 @@ class DetailViewController: UIViewController {
     var searchableItems = [CSSearchableItem]()
         let attributeSet =       CSSearchableItemAttributeSet(itemContentType: "views" as String)
         attributeSet.title = "施华洛世奇"
-        attributeSet.contentDescription =  "宫崎骏"
+        attributeSet.contentDescription =  "宫崎骏的施华洛世奇"
      
         let image :UIImage! = UIImage(named: "tommy.png")
         attributeSet.thumbnailData = UIImagePNGRepresentation(image)
